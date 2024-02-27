@@ -14,10 +14,6 @@ unpassed = []
 for c in range(len(cases)):
     case = cases[c]
     sol = Solution()
-    if sol.solve(case[1]) != case[2]:
-        unpassed.append(str(c))
-
-if unpassed:
-    print('unpassed cases:' + ' '.join(unpassed))
-else:
-    print('all passed')
+    result = sol.solve(case[1])
+    if result != case[2]:
+        print('Case ' + str(c) + ' not passed, output:' + result)
