@@ -62,3 +62,5 @@ list.count(arg) # 计算列表或字符串中的arg元素或字串数目
 list.index(item, pos) # 从pos位置开始在list中查找元素item，或从字符串中查找子串，没找到会报错
 f"number:.nf" # 将number调整为n位小数
 func(*arg, **kwarg) # 将没有键的参数放到arg元组里面，将有键的参数放到kwarg对象里面
+dict.copy() # 复制字典
+Class() # 实例化一个类
