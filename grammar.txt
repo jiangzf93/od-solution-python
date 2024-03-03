@@ -57,7 +57,7 @@ list.remove(elem) # 将第一个出现的elem从list中删除
 sum(list) # 对list求和，不可以是一系列参数
 a ** b # 幂运算
 string.find(substr, start) # 从start开始求子串substr第一次出现在string中的索引，没找到则返回-1
-gloabal a # 函数内部修改外部定义的变量，需要在函数开头用global声明这个变量
+global a # 函数内部修改外部定义的变量，需要在函数开头用global声明这个变量
 list.count(arg) # 计算列表或字符串中的arg元素或字串数目
 list.index(item, pos) # 从pos位置开始在list中查找元素item，或从字符串中查找子串，没找到会报错
 f"number:.nf" # 将number调整为n位小数
