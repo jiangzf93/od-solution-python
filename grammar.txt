@@ -64,7 +64,5 @@ f"number:.nf" # 将number调整为n位小数
 func(*arg, **kwarg) # 将没有键的参数放到arg元组里面，将有键的参数放到kwarg对象里面
 dict.copy() # 复制字典
 Class() # 实例化一个类
-queue.PriorityQueue() # 优先队列
-PriorityQueue.qsize() # 优先队列长度
-PriorityQueue.put(item, priority) # 加入元素
-PriorityQueue.get() # 获取最小的元素
+list.pop(index) # 从列表list中删除并返回位置在index中的元素
+list.insert(index, item) # 向列表list的index位置插入item
