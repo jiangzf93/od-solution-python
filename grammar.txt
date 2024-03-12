@@ -67,3 +67,12 @@ Class() # 实例化一个类
 list.pop(index) # 从列表list中删除并返回位置在index中的元素
 list.insert(index, item) # 向列表list的index位置插入item
 enumerate(list) # 为列表元素标记索引，返回元组列表
+import heapq # 引入最小堆包
+heapq.heapify(iterable): 将一个可迭代对象转换成一个最小堆。
+heapq.heappush(heap, elem): 将元素elem推入堆heap中，保持堆的属性，注意elem需要可比较，需要定义__lt__方法
+heapq.heappop(heap): 弹出并返回堆heap中的最小元素。
+heapq.heappushpop(heap, elem): 将元素elem推入堆中，并弹出堆中的最小元素。
+heapq.nlargest(n, iterable): 返回最大n个元素的列表。
+heapq.nsmallest(n, iterable): 返回最小n个元素的列表。
+from collections import defaultdict # 引入默认字典
+defaultdict(type) # 设定defaultdict的默认值，如int, str等
