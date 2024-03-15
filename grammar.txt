@@ -76,3 +76,4 @@ heapq.nlargest(n, iterable): 返回最大n个元素的列表。
 heapq.nsmallest(n, iterable): 返回最小n个元素的列表。
 from collections import defaultdict # 引入默认字典
 defaultdict(type) # 设定defaultdict的默认值，如int, str等
+__lt__(self, other) # 自定义类<比较符的规则，可用于heapq中的排序
