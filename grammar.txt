@@ -4,7 +4,7 @@ array.split() # 将字符串按照字符分割为数组，默认为空额
 str(arg) # 将数字转换为字符串
 len(arg) # 数组或字符串的长度
 sys.stdin.write(arg) # 向标准输出写入，必须是字符串
-arg.strip() # 去除字符串两侧的空格，包括换行符
+arg.strip(arg) # 默认去除字符串两侧的空格，包括换行符，如果指定arg则去除arg，lstrip和rstrip分别去掉左右侧的符号
 [func(elem) for elem in list if cond] # 列表解析，对列表中每个元素进行处理
 {a:b for a in list} # 字典推导式
 {a for a in list} # 集合推导式
@@ -77,3 +77,11 @@ heapq.nsmallest(n, iterable): 返回最小n个元素的列表。
 from collections import defaultdict # 引入默认字典
 defaultdict(type) # 设定defaultdict的默认值，如int, str等
 __lt__(self, other) # 自定义类<比较符的规则，可用于heapq中的排序
+import re # 正则库
+re.split(r'pattern', str) # 按照pattern分割字符串str
+\d # 正则数字
+\D # 正则非数字
+\w # 正则字母
+\W # 正则非字母
+^ # 正则起始
+$ # 正则结束
