@@ -54,6 +54,7 @@ map(lambda, list) # 对list进行批量修改，处理方式为lambda表达式�
 a if cond else b # 三元判断符，判断cond 为真取值a否则取值b
 list.insert(pos, elem) # 将elem插入到list的pos位置元素前面
 list.remove(elem) # 将第一个出现的elem从list中删除
+list.count(elem) # 对数组元素计数
 sum(list) # 对list求和，不可以是一系列参数
 a ** b # 幂运算
 string.find(substr, start) # 从start开始求子串substr第一次出现在string中的索引，没找到则返回-1
