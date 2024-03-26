@@ -80,6 +80,9 @@ defaultdict(type) # 设定defaultdict的默认值，如int, str等
 __lt__(self, other) # 自定义类<比较符的规则，可用于heapq中的排序
 import re # 正则库
 re.split(r'pattern', str) # 按照pattern分割字符串str
+re.complie(pattern) # 生成正则模式
+pattern.findall(str) # 找到str中符合pattern的所有元素并返回列表
+re.sub(pattern, to, from) # 从from中匹配pattern，并替换为to
 \d # 正则数字
 \D # 正则非数字
 \w # 正则字母
