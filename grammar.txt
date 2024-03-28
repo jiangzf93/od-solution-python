@@ -83,9 +83,14 @@ re.split(r'pattern', str) # 按照pattern分割字符串str
 re.complie(pattern) # 生成正则模式
 pattern.findall(str) # 找到str中符合pattern的所有元素并返回列表
 re.sub(pattern, to, from) # 从from中匹配pattern，并替换为to
+re.match(pattern, str) # 从str中检查是否又满足pattern的内容，没有返回None
 \d # 正则数字
 \D # 正则非数字
 \w # 正则字母
 \W # 正则非字母
 ^ # 正则起始
 $ # 正则结束
+() # 正则捕获组
+[] # 同一个字符串兼容
+from functools import cache # 缓存相同参数函数运行结果
+@cache # 函数前面加这个修饰符可以缓存相同参数的运行结果
